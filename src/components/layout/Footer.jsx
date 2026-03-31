@@ -5,7 +5,7 @@ export function Footer() {
         href="https://portfolio-2-azure-delta.vercel.app/"
         target="_blank"
         rel="noreferrer"
-        className="font-medium text-contrast transition-colors hover:text-primary"
+        className="font-medium text-contrast underline-offset-4 transition-colors hover:text-primary hover:underline"
       >
         Built by Abraham
       </a>

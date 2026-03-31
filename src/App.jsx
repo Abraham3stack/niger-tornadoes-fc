@@ -2,17 +2,17 @@ import { motion as Motion } from 'framer-motion'
 import { Footer } from './components/layout/Footer'
 import { MobileNav } from './components/layout/MobileNav'
 import { Sidebar } from './components/layout/Sidebar'
-import { academyData, navItems } from './data/academyData'
+import { clubData, navItems } from './data/clubData'
 import { useActiveSection } from './hooks/useActiveSection'
 import { AboutPage } from './pages/AboutPage'
-import { CoachesPage } from './pages/CoachesPage'
 import { ContactPage } from './pages/ContactPage'
-import { FounderPage } from './pages/FounderPage'
+import { FixturesPage } from './pages/FixturesPage'
 import { GalleryPage } from './pages/GalleryPage'
-import { HistoryPage } from './pages/HistoryPage'
 import { HomePage } from './pages/HomePage'
 import { JoinUsPage } from './pages/JoinUsPage'
-import { ProgramsPage } from './pages/ProgramsPage'
+import { NewsPage } from './pages/NewsPage'
+import { SponsorsPage } from './pages/SponsorsPage'
+import { SquadPage } from './pages/SquadPage'
 
 function App() {
   const sectionIds = navItems.map((item) => item.id)
@@ -33,14 +33,14 @@ function App() {
           transition={{ duration: 0.4 }}
           className="min-w-0 flex-1"
         >
-          <HomePage onJoinClick={() => scrollToSection('join-us')} />
-          <AboutPage academyData={academyData} />
-          <HistoryPage academyData={academyData} />
-          <FounderPage academyData={academyData} />
-          <ProgramsPage academyData={academyData} />
-          <CoachesPage academyData={academyData} />
-          <GalleryPage academyData={academyData} />
-          <ContactPage academyData={academyData} />
+          <HomePage onSquadClick={() => scrollToSection('squad')} onNewsClick={() => scrollToSection('news')} />
+          <AboutPage clubData={clubData} />
+          <SquadPage clubData={clubData} />
+          <NewsPage clubData={clubData} />
+          <FixturesPage clubData={clubData} />
+          <GalleryPage clubData={clubData} />
+          <SponsorsPage clubData={clubData} />
+          <ContactPage clubData={clubData} />
           <JoinUsPage />
           <Footer />
         </Motion.main>

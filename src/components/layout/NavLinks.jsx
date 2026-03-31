@@ -1,4 +1,4 @@
-import { navItems } from '../../data/academyData'
+import { navItems } from '../../data/clubData'
 import { cn } from '../../lib/utils'
 
 export function NavLinks({ activeSection, onNavigate }) {

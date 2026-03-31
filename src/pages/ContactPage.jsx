@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card'
 import { Input } from '../components/ui/input'
 import { Textarea } from '../components/ui/textarea'
 
-export function ContactPage({ academyData }) {
+export function ContactPage({ clubData }) {
   return (
     <SectionWrapper id="contact" title="Contact">
       <div className="grid gap-4 lg:grid-cols-2">
@@ -29,16 +29,16 @@ export function ContactPage({ academyData }) {
           </CardHeader>
           <CardContent>
             <p>
-              <span className="font-semibold">Phone:</span> {academyData.contact.phone}
+              <span className="font-semibold">Phone:</span> {clubData.contact.phone}
             </p>
             <p className="mt-2">
-              <span className="font-semibold">Email:</span> {academyData.contact.email}
+              <span className="font-semibold">Email:</span> {clubData.contact.email}
             </p>
             <p className="mt-2">
-              <span className="font-semibold">Location:</span> {academyData.contact.location}
+              <span className="font-semibold">Location:</span> {clubData.contact.location}
             </p>
             <div className="mt-4 rounded-lg bg-slate-100 p-6 text-center text-sm text-slate-500">
-              Map/location placeholder
+              Stadium map/location placeholder
             </div>
           </CardContent>
         </Card>
