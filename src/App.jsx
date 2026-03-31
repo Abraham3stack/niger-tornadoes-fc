@@ -45,6 +45,16 @@ function App() {
           <Footer />
         </Motion.main>
       </div>
+
+      <a
+        href="https://wa.me/2348012345678"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-5 right-5 z-50 flex items-center justify-center rounded-full bg-green-500 p-4 shadow-lg hover:bg-green-600"
+      >
+        <span className="text-white font-bold">WA</span>
+      </a>
+
     </div>
   )
 }
